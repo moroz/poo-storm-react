@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "@apollo/client": "^3.4.17",
+    "clsx": "^1.1.1",
     "graphql": "^16.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-hook-form": "^7.20.2"
+    "react-hook-form": "^7.20.2",
+    "sass": "^1.43.4"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
