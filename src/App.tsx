@@ -1,17 +1,17 @@
-import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import { ApolloProvider } from "@apollo/client";
+import client from "./api/client";
+import CommentList from "./components/CommentList";
+import NewCommentForm from "./components/NewCommentForm";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <NewCommentForm />
+        <CommentList />
+      </div>
+    </ApolloProvider>
   );
 }
 

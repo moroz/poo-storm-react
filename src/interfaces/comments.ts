@@ -9,3 +9,9 @@ export interface Comment {
   updatedAt: string;
   url: string;
 }
+
+export interface CommentInput {
+  body: string;
+  signature: string;
+  url: string;
+}
